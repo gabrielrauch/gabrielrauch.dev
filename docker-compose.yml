@@ -7,7 +7,5 @@ services:
     ports:
       - 3000:3000
     volumes:
-      - ./src/pages:/app/src/pages
-      - ./src/global:/app/src/global
-      - ./src/components:/app/src/components
+      - ./src:/app/src
       - ./public:/app/public
