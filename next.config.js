@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  compiler: {
+    styledComponents: true,
+  },
   webpackDevMiddleware: (config) => {
     config.watchOptions = {
       poll: 1000,
