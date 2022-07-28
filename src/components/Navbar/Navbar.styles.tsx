@@ -11,6 +11,7 @@ const StyledNavbar = styled.nav`
   left: 0;
   right: 0;
   z-index: 1;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   @media (max-width: 768px) {
     justify-content: center;
   }
@@ -19,18 +20,21 @@ const StyledNavbar = styled.nav`
 const NavbarContainer = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   height: 80px;
   gap: 10px;
+  width: 100%;
   max-width: 1500px;
-  margin: 0 auto;
+  margin: 500px;
   @media (max-width: 768px) {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
+    gap: 100px;
     height: 100px;
     max-width: 100%;
     padding: 0 20px;
+    margin: 0;
   }
 `
 
